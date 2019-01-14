@@ -18,8 +18,8 @@
     "coffeescript"
   ],
   "scripts": {
-    "test": "jest --no-cache --verbose",
-    "test:watch": "jest --no-cache --verbose --watchAll",
+    "test": "jest --no-cache",
+    "test:watch": "jest --no-cache --watchAll",
     "lint": "eslint \"src/**/*.js\"",
     "format": "prettier --loglevel silent --write \"src/**/*.js\" && eslint --fix \"src/**/*.js\"",
     "prepublishOnly": "npm run format && npm run test",
@@ -44,10 +44,10 @@
     "prettier": "^1.14.3",
     "pug": "^2.0.3",
     "stylus": "^0.54.5",
-    "svelte": "^2.14.3"
+    "svelte": "git+ssh://git@github.com/sveltejs/svelte.git"
   },
   "peerDependencies": {
-    "svelte": "^1.44.0 || ^2.0.0"
+    "svelte": "^3.0.0"
   },
   "dependencies": {
     "postcss-load-config": "^2.0.0",
